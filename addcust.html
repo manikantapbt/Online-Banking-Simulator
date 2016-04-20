@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DBMS Customer:</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <style>
+  body {
+    background-color:  #00bcd4;
+  .center_div{
+    margin: 0 auto;
+    width:80%
+    }	
+  }
+  </style>  
+  </head>
+<body>
+
+<div class="header">
+  <div class="header_resize">
+    <div class="logo" ><h1><strong style="color:gray"> Banking System</strong><h1>
+  </div>
+
+	<div class="container">
+	  <h2>Customer Form!</h2>
+	  <br>
+	  <form role="form" action="addcust.php" method="POST">
+	  
+		<div class="col-xs-2">
+		  <label>Cust Username:</label>
+		  <input type="text" class="form-control" name="cust" maxlength="8" placeholder="Enter Cust username" required="">
+		  <span class="help-block">Customer Username not mor than 8 digits.</span>
+		</div>
+
+		<div class="col-xs-2">
+		  <label>First Name:</label>
+		  <input type="text" class="form-control input-normal" name="fname" maxlength="25" placeholder="Enter First Name" required="">
+		  <span class="help-block">You can type your first name here.</span>
+		</div>
+		
+		<div class="col-xs-2">
+		  <label>Last Name:</label>
+		  <input type="text" class="form-control" name="lname" maxlength="25" placeholder="Enter Last Name" required="">
+		  <span class="help-block">You can type your last name here.</span>
+		</div> 
+		
+		<div class="col-xs-2">
+		  <label>Age:</label>
+		  <input type="number" class="form-control" maxlength="25" name="age" min="18" placeholder="Enter Age" required="">
+		  <span class="help-block">You can type your Age here.</span>
+		</div>
+		
+		<div class="col-xs-2">
+		  <label+>Address:</label>
+		  <input type="text" class="form-control" maxlength="25" name="address" placeholder="Enter Address" required="">
+		  <span class="help-block">You can type your Address here.</span>
+		</div>
+		
+		<div class="col-xs-2">
+		  <label for="pwd">Country:</label>
+		  <input type="text" class="form-control" maxlength="15" name="country" placeholder="Enter Country" required="">
+		  <span class="help-block">You can type your Country here.</span>
+		</div> 
+		<br>
+		<br>
+		<br>
+		<div class="col-xs-2">
+		  <label>Email:</label>
+		  <input type="email" class="form-control" maxlength="25" name="email" placeholder="Enter email" required="">
+		  <span class="help-block">You can type your Mail name here.</span>
+		</div>
+		 
+		<div class="col-xs-2">
+		  <label  >Contact No:</label>
+		  <input type="number" class="form-control" maxlength="11" min="1" name="number" placeholder="Enter Contact No" required="">
+		  <span class="help-block">You can type your Contact no here.</span>
+		</div>
+		  
+		<div class="col-xs-2">
+		  <label>Account NO:</label>
+		  <input type="number" class="form-control" maxlength="25" name="account" placeholder="Enter Account No" required="">
+		  <span class="help-block">You can type your Account no here.</span>
+		</div>
+		
+		<div class="col-xs-2">
+		  <label>New Password:</label>
+		  <input type="text" class="form-control" maxlength="25" name="password" placeholder="Enter New password" required="">
+		  <span class="help-block">You can type your New Password  here.</span>
+		</div>
+		
+		<div class="checkbox">
+		  <label><input type="checkbox">.</label>
+		</div>
+		
+		<button type="submit" class="btn btn-success">Submit</button>
+	  </form>
+	</div>
+</div>
+</body>
+</html>
